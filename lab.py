@@ -19,8 +19,8 @@ while True:
         if ask_user.lower() == "y":
             with open("to_do.txt", "r", encoding="UTF-8") as new_item:
                 items = new_item.readlines()
-                for item in items:
-                    print(item.strip())
+                for index, item in enumerate(items, start=1):
+                    print(f"{index}- {item.strip()}")
     elif user_input.lower() == "exit":
         print("Thank you for using the To-Do program, come back again soon")
         break
