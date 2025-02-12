@@ -8,8 +8,7 @@
 '''
 
 while True:
-    user_name = input("Hey what is your name ? ")
-    user_input = input(f"\nWelcome {user_name} this is the to-do program \nDo you want to add a new To-Do item?\nAnswer by y for yes, n for no, exit to end the program: ")
+    user_input = input(f"\nWelcome this is the to-do program \nDo you want to add a new To-Do item?\nAnswer by y for yes, n for no, exit to end the program: ")
     
     if user_input.lower() == "y":
         item_name = input("Enter your new To-Do item: ")
